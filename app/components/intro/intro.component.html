@@ -1,0 +1,21 @@
+<md-card class="item">
+      <md-toolbar color="primary">Angular, the best workshop :)</md-toolbar>
+      <md-card-content>
+        <span>Welcome ! Please introduce yourself, your name is : </span>
+        <md-input placeholder="Your name" [(ngModel)]="name"></md-input>
+        <p *ngIf="name">First, you're awesome {{name}}! </p>
+        <p>Let me introduce myself, i am Billel Guerfa, and today we're gonna play with Angular :) </p>
+        <p>This app is a set of quizes related to some friends of Angular, through the developement of this app we will learn
+          Angular Fundamentals :
+          <p>
+            <ul>
+              <li>Modules</li>
+              <li>Components</li>
+              <li>Magical Data binding :p</li>
+              <li>Dependency injection</li>
+              <li>Router</li>
+              <li>Services</li>
+              <li>....Super powers</li>
+            </ul>
+      </md-card-content>
+    </md-card>

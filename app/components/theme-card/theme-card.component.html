@@ -1,0 +1,14 @@
+<md-card class="item">
+  <md-card-title>{{theme.name}}</md-card-title>
+  <md-card-content>
+    <img [src]="theme.logo" alt="" width="200" height="200">
+    <p>{{theme.description}} </p>
+  </md-card-content>
+  <md-card-actions>
+    <a [routerLink]="['/questions']" >
+    <button md-button color="primary" >
+      Take me to the quiz
+    </button>
+    </a>
+  </md-card-actions>
+</md-card>

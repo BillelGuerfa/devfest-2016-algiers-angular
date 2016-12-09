@@ -1,0 +1,18 @@
+<md-card class="item">
+  <md-card-title>{{question.title}}</md-card-title>
+  <md-card-content>
+    <p>{{question.description}}</p>
+    <table>
+      <tr *ngFor="let choice of question.choices">
+        <md-checkbox [disabled]="preview" (change)="choice.toggle()">
+          {{choice.label}}
+        </md-checkbox>
+        <md-icon *ngIf="preview && choice.isCorrect()" >done</md-icon>
+        <md-icon *ngIf="preview && !choice.isCorrect()" >clear</md-icon>
+      </tr>
+    </table>
+  </md-card-content>
+  <md-card-actions>
+    <button md-raised-button color="primary" (click)="checkChoices()">Check choices !</button>
+  </md-card-actions>
+</md-card>
